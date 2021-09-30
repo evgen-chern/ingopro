@@ -68,16 +68,16 @@ window.onload = function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<div class="prev"><img src="/../img/arrow-left.png"></div>',
-        nextArrow: '<div class="next"><img src="/../img/arrow-left.png"></div>',
+        prevArrow: '<div class="prev"><img src="img/arrow-left.png"></div>',
+        nextArrow: '<div class="next"><img src="img/arrow-left.png"></div>',
         responsive: [
             {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
                     arrows: true,
-                    prevArrow: '<div class="prev"><img src="/../img/arrow-left.png"></div>',
-                    nextArrow: '<div class="next"><img src="/../img/arrow-left.png"></div>',
+                    prevArrow: '<div class="prev"><img src="img/arrow-left.png"></div>',
+                    nextArrow: '<div class="next"><img src="img/arrow-left.png"></div>',
                 }
             },
         ]
@@ -87,16 +87,16 @@ window.onload = function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        prevArrow: '<div class="prev"><img src="/../img/arrow-left.png"></div>',
-        nextArrow: '<div class="next"><img src="/../img/arrow-left.png"></div>',
+        prevArrow: '<div class="prev"><img src="img/arrow-left.png"></div>',
+        nextArrow: '<div class="next"><img src="img/arrow-left.png"></div>',
         responsive: [
             {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 1,
                     arrows: true,
-                    prevArrow: '<div class="prev"><img src="/../img/arrow-left.png"></div>',
-                    nextArrow: '<div class="next"><img src="/../img/arrow-left.png"></div>',
+                    prevArrow: '<div class="prev"><img src="img/arrow-left.png"></div>',
+                    nextArrow: '<div class="next"><img src="img/arrow-left.png"></div>',
                 }
             },
         ]
