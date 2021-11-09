@@ -1471,6 +1471,82 @@ html {
 
 /*END ABOUT*/
 
+/*START CONTACTS*/
+
+.main-contacts {
+  margin-bottom: 100px;
+}
+
+.main-contacts .title__container {
+  margin: 0 0 60px 0;
+}
+
+.main-contacts .contacts_items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.main-contacts .contacts_items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 60px;
+}
+
+.main-contacts .contacts_items .item .wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1E2245;
+  margin-bottom: 14px;
+}
+
+.main-contacts .contacts_items .item .wrp svg {
+  margin-right: 10px;
+}
+
+.main-contacts .contacts_items .item a {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #1E2245;
+}
+
+.main-contacts .contacts_items .item p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #1E2245;
+}
+
+.main-contacts .contacts_items .item p b {
+  font-weight: bold;
+}
+
+.main-contacts .map {
+  width: 100%;
+  max-width: 1440px;
+  height: 409px;
+  margin: 0 auto;
+  padding: 0 140px;
+}
+
+/*END CONTACTS*/
+
 @media all and (max-width: 1600px) {
   .footer .footer-contact .footer-contact__form {
     margin: 4% 38% 0 auto;
@@ -1519,6 +1595,10 @@ html {
   .news .news-slider .slick-arrow.prev {
     top: 25%;
   }
+
+  .main-contacts .map {
+    padding: 0 25px;
+  }
 }
 
 @media all and (max-width: 1023px) {
@@ -1561,6 +1641,11 @@ html {
 
   .header-wrap .menu-wrap .header-contact .mobile-menu.active:after {
     display: none;
+  }
+
+  .header_all-pages .header-wrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .breadcrumbs {
@@ -1691,6 +1776,44 @@ html {
 
   .about_wrapper .sidebar-menu {
     display: none;
+  }
+
+  .main-contacts {
+    margin-bottom: 0;
+  }
+
+  .main-contacts .title__container {
+    margin: 0 0 40px 0;
+  }
+
+  .main-contacts .contacts_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .main-contacts .contacts_items .item {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .main-contacts .contacts_items .item:last-child {
+    margin-bottom: 0;
+  }
+
+  .main-contacts .contacts_items .item a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main-contacts .contacts_items .item p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .main-contacts .map {
+    padding: 0;
   }
 }
 
