@@ -742,7 +742,7 @@ html {
 /*SERVICES*/
 
 .services {
-  background: url(../img/subtract.png) no-repeat scroll -50% 50%;
+  background: url(../img/subtract.png) no-repeat scroll -50% 72%;
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -754,7 +754,7 @@ html {
 }
 
 .services.anim {
-  background: url(../img/subtract.png) no-repeat scroll 0 50%;
+  background: url(../img/subtract.png) no-repeat scroll 0 72%;
 }
 
 .services .services-slider {
@@ -767,6 +767,14 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+.services .services-slider .slick-arrow.next {
+  top: 35%;
+}
+
+.services .services-slider .slick-arrow.prev {
+  top: 35%;
 }
 
 .services .services-slider .services-slider__item {
