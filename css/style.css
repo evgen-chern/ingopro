@@ -1496,6 +1496,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  padding-top: 10px;
 }
 
 .about_wrapper .main-about_us .about_content .advantages .two_items {
