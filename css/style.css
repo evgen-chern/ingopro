@@ -215,7 +215,7 @@ html {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 140px;
+  padding: 0 100px;
 }
 
 .header {
@@ -870,9 +870,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   /*anim*/
   -webkit-transform: translate(0, 150%);
       -ms-transform: translate(0, 150%);
@@ -890,8 +890,8 @@ html {
   opacity: 1;
 }
 
-.advantage .advantage-wrap .advantage-row.mt-45 {
-  margin-top: 45px;
+.advantage .advantage-wrap .advantage-row.mt-80 {
+  margin-top: 80px;
 }
 
 .advantage .advantage-wrap .advantage-row .advantage-item {
@@ -901,18 +901,40 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 45px;
+  margin-left: 50px;
+  width: 33%;
 }
 
 .advantage .advantage-wrap .advantage-row .advantage-item:first-child {
   margin-left: 0;
 }
 
-.advantage .advantage-wrap .advantage-row .advantage-item p {
+.advantage .advantage-wrap .advantage-row .advantage-item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advantage .advantage-wrap .advantage-row .advantage-item .text p {
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
-  max-width: 279px;
+  max-width: 100%;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.advantage .advantage-wrap .advantage-row .advantage-item .text span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  max-width: 100%;
   margin-left: 15px;
 }
 
@@ -1666,7 +1688,7 @@ html {
             align-items: flex-start;
   }
 
-  .advantage .advantage-wrap .advantage-row.mt-45 {
+  .advantage .advantage-wrap .advantage-row.mt-80 {
     margin-top: 0;
   }
 
@@ -1676,7 +1698,12 @@ html {
     width: 100%;
   }
 
-  .advantage .advantage-wrap .advantage-row .advantage-item p {
+  .advantage .advantage-wrap .advantage-row .advantage-item .text p {
+    margin-left: 35px;
+    max-width: 100%;
+  }
+
+  .advantage .advantage-wrap .advantage-row .advantage-item .text span {
     margin-left: 35px;
     max-width: 100%;
   }
