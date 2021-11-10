@@ -163,3 +163,12 @@ window.onload = function(){
 
 
 }
+
+let header = $('.sticky_header-main');
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1080) {
+            header.addClass('d-block');
+        } else {
+            header.removeClass('d-block');
+        }
+    });
