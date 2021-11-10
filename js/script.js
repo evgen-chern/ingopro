@@ -146,6 +146,20 @@ window.onload = function(){
             $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
         });
 
+    let buttonUp = $('#button-up');
+    $(window).scroll (function () {
+        if ($(this).scrollTop () > 300) {
+            buttonUp.fadeIn();
+        } else {
+            buttonUp.fadeOut();
+        }
+    });
+    buttonUp.on('click', function(){
+        $('body, html').animate({
+            scrollTop: 0
+        }, 0);
+        return false;
+    });
 
 
 }
