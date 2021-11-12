@@ -55,6 +55,14 @@ window.onload = function(){
         $(".header-menu_nav").toggleClass("active")
     });
 
+    /*HEADER DROP*/
+    $(".header-drop .arrow").click(function(){
+        if(window.innerWidth <= 780){
+            $(this).toggleClass("active")
+            $(this).siblings(".header_drop_links").slideToggle().css("display", "flex")
+        }
+    })
+
     /*FOOTER DROP*/
     $(".footer__drop .title").click(function(){
         if(window.innerWidth <= 780){
