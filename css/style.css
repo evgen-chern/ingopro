@@ -1781,6 +1781,130 @@ html {
 
 /*END CONTACTS*/
 
+.heading_items {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #1E2245;
+  margin-bottom: 60px;
+}
+
+/*START SERVICES DETAIL*/
+
+.services-detail_wrapper {
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  grid-column-gap: 40px;
+}
+
+.services-detail_wrapper .main-services_detail .content p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #1E2245;
+  margin-bottom: 30px;
+}
+
+.services-detail_wrapper .main-services_detail .content .img_container {
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.services-detail_wrapper .main-services_detail .content .img_container img {
+  width: 100%;
+}
+
+.services-detail_wrapper .main-services_detail .content .yellow_container {
+  background: #FEF3D4;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.services-detail_wrapper .main-services_detail .content .yellow_container p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #1E2245;
+  margin-bottom: 0;
+}
+
+.services-detail_wrapper .main-services_detail .content .yellow_container p b {
+  font-weight: 500;
+}
+
+.services-detail_wrapper .main-services_detail .content h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #1E2245;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.services-detail_wrapper .main-services_detail .content span {
+  font-size: 16px;
+  line-height: 150%;
+  color: #1E2245;
+}
+
+.services-detail_wrapper .main-services_detail .content ul {
+  padding-left: 25px;
+}
+
+.services-detail_wrapper .main-services_detail .content ul li {
+  list-style-type: disc;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1E2245;
+}
+
+.services-detail_wrapper .services__sidebar-menu {
+  width: 260px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.services-detail_wrapper .services__sidebar-menu .sidebar_btn {
+  margin-bottom: 10px;
+}
+
+.services-detail_wrapper .services__sidebar-menu .sidebar_btn a {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #404040;
+  padding: 12px 62px;
+  background: #F9C127;
+  border-radius: 3px;
+}
+
+.services-detail_wrapper .services__sidebar-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #333E52;
+  padding: 20px 35px 70px 20px;
+}
+
+.services-detail_wrapper .services__sidebar-menu ul li {
+  margin-bottom: 15px;
+}
+
+.services-detail_wrapper .services__sidebar-menu ul li a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+/*END SERVICES DETAIL*/
+
 @media all and (max-width: 1600px) {
   .footer .footer-contact .footer-contact__form {
     margin: 4% 38% 0 auto;
@@ -2074,6 +2198,62 @@ html {
 
   .main-contacts .map {
     padding: 0;
+  }
+
+  .heading_items {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .services-detail_wrapper {
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 0;
+    grid-column-gap: 0;
+  }
+
+  .services-detail_wrapper .main-services_detail .content p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .services-detail_wrapper .main-services_detail .content .img_container {
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .services-detail_wrapper .main-services_detail .content .yellow_container {
+    padding: 20px 12px;
+  }
+
+  .services-detail_wrapper .main-services_detail .content .yellow_container p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .services-detail_wrapper .main-services_detail .content h2 {
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .services-detail_wrapper .main-services_detail .content span {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .services-detail_wrapper .main-services_detail .content ul {
+    padding-left: 15px;
+  }
+
+  .services-detail_wrapper .main-services_detail .content ul li {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .services-detail_wrapper .services__sidebar-menu {
+    display: none;
   }
 }
 
