@@ -2494,7 +2494,7 @@ html {
   }
 
   .main-services .services_items .item .item_link {
-    display: none;
+    right: 16%;
   }
 
   .main-services .services_items .item img {
