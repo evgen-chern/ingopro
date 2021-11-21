@@ -227,23 +227,35 @@ html {
 }
 
 .header {
-  background: url(../img/header-bg.png) right/cover no-repeat;
-  background-size: 200%;
-  height: 800px;
+  height: 600px;
   position: relative;
   -webkit-transition: all 2s;
   -o-transition: all 2s;
   transition: all 2s;
   overflow: hidden;
+  background-color: black;
 }
 
-.header.anim {
-  background-size: 120%;
-  background-position: center;
+.header .video_frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.header .video_frame video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+
+.header .header-wrap {
+  padding-top: 30px;
 }
 
 .header-wrap {
-  padding-top: 35px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +267,7 @@ html {
 }
 
 .header-wrap .menu-wrap {
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,6 +313,10 @@ html {
   color: #FFFFFF;
 }
 
+.header-wrap .menu-wrap .header-menu .header-menu_nav ul li a.selected {
+  color: #F9C127;
+}
+
 .header-wrap .menu-wrap .header-menu .header-menu_nav.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,7 +330,7 @@ html {
   top: 0;
   background: #FFFFFF;
   padding: 30px 18px;
-  z-index: 1;
+  z-index: 2;
   width: 79%;
   height: 100vh;
 }
@@ -338,6 +355,10 @@ html {
   font-size: 16px;
   line-height: 19px;
   color: #1E2245;
+}
+
+.header-wrap .menu-wrap .header-menu .header-menu_nav.active ul li a.selected {
+  color: #F9C127;
 }
 
 .header-wrap .menu-wrap .header-menu .header-menu_nav.active ul li.header-drop {
@@ -493,25 +514,25 @@ html {
 }
 
 .header-wrap .menu-wrap .header-contact .callback a {
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  color: #F9C127;
 }
 
 .header-wrap .menu-wrap .header-contact .callback a:hover {
-  color: #F9C127;
+  color: #fff;
   text-decoration: underline;
 }
 
 .header-wrap .menu-wrap .header-contact .callback a.callback__btn {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   color: #fff;
 }
 
 .header-wrap .menu-wrap .header-contact .callback a.callback__btn:hover {
-  color: #F9C127;
+  color: #F5F7F9;
   text-decoration: underline;
 }
 
@@ -568,9 +589,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 167px;
+  margin-top: 73px;
   max-width: 520px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .header-wrap .header-info h1 {
@@ -667,8 +689,8 @@ html {
 
 .header_all-pages .header-wrap,
 .sticky_header-main .header-wrap {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .sticky_header-main {
@@ -808,6 +830,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 90px;
 }
 
 .about-company .about-company__text {
@@ -962,7 +985,6 @@ html {
 /*ADVANTAGE*/
 
 .advantage {
-  margin-top: 100px;
   padding-bottom: 100px;
   background: #262F40;
   overflow: hidden;
@@ -1420,6 +1442,11 @@ html {
       transform: rotate(135deg);
 }
 
+.footer .footer-info .container .footer-info__menu .title a {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
 .footer .footer-info .container .footer-info__menu .footer__links li {
   margin-top: 15px;
 }
@@ -1799,6 +1826,10 @@ html {
   margin-bottom: 60px;
 }
 
+.services-detail_wrapper .main-services_detail .content b {
+  font-weight: 500;
+}
+
 .services-detail_wrapper .main-services_detail .content p {
   font-size: 16px;
   line-height: 150%;
@@ -1903,6 +1934,10 @@ html {
   color: #FFFFFF;
 }
 
+.services-detail_wrapper .services__sidebar-menu ul li a.selected {
+  color: #F9C127;
+}
+
 /*END SERVICES DETAIL*/
 
 /*START SERVICES*/
@@ -1962,6 +1997,7 @@ html {
 
 .main-services .services_items .item p {
   margin-top: 20px;
+  text-align: center;
 }
 
 .main-services .services_items .item p a {
@@ -1997,7 +2033,8 @@ html {
   width: 100%;
 }
 
-.main-services .callback-form .form-group input {
+.main-services .callback-form .form-group input[type=text],
+.main-services .callback-form .form-group input[type=tel] {
   background: #FFFFFF;
   border: 1px solid #FFFFFF;
   -webkit-box-sizing: border-box;
@@ -2010,7 +2047,7 @@ html {
   width: 35%;
 }
 
-.main-services .callback-form .form-group a {
+.main-services .callback-form .form-group input[type=submit] {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -2019,6 +2056,7 @@ html {
   background: #F9C127;
   border-radius: 3px;
   padding: 11px 60px;
+  width: auto;
 }
 
 .main-services .services_content h2 {
@@ -2095,6 +2133,7 @@ html {
 
 .main-services .services_content .services_advantages .item img {
   width: 100%;
+  max-width: 75px;
 }
 
 .main-services .services_content .services_advantages .item p {
@@ -2141,7 +2180,11 @@ html {
   }
 
   .header {
-    height: 690px;
+    height: 667px;
+  }
+
+  .header-wrap .header-info {
+    margin-top: 120px;
   }
 
   .slick-arrow.next {
@@ -2170,12 +2213,9 @@ html {
 }
 
 @media all and (max-width: 1023px) {
-  .header.anim {
-    background-size: cover;
-  }
-
-  .header-wrap {
-    padding-top: 20px;
+  .header .header-wrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .header-wrap .menu-wrap .header-menu .header-menu_nav {
@@ -2219,6 +2259,10 @@ html {
 
   .breadcrumbs {
     margin: 20px auto 30px auto;
+  }
+
+  .about-company {
+    margin-top: 50px;
   }
 
   .services .services-slider .services-slider__item .arrow_link {
@@ -2529,7 +2573,8 @@ html {
             flex-direction: column;
   }
 
-  .main-services .callback-form .form-group input {
+  .main-services .callback-form .form-group input[type=text],
+  .main-services .callback-form .form-group input[type=tel] {
     width: 100%;
     margin-bottom: 25px;
   }
@@ -2693,7 +2738,6 @@ html {
   }
 
   .advantage {
-    margin-top: 50px;
     padding-bottom: 0;
   }
 
@@ -2852,10 +2896,6 @@ html {
 }
 
 @media all and (max-width: 767px) {
-  .header {
-    background-size: 600%;
-  }
-
   .geography .container .geo_img {
     height: 300px;
   }
